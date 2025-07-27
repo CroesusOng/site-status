@@ -33,10 +33,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ].concat(siteConfig.platform === "cloudflare" ? "@nuxthub/core" : ""),
   // ssr
-  ssr: true,
-  nitro: {
-    preset: 'cloudflare-pages',
-  },
+  ssr: false,
   // devtools
   devtools: { enabled: true },
   // app
